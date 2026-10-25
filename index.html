@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="El documento que necesitas para postular a un empleo. Reúne tu información personal, antecedentes policiales, penales y judiciales, educación y experiencia laboral formal. Lo puedes obtener en línea, rápido y gratis.">
+  <title>Certificado Único Laboral (CERTIJOVEN y CERTIADULTO) - Ministerio de Trabajo y Promoción del Empleo</title>
+
+  <!-- Metadatos Open Graph / WhatsApp / Facebook / Redes Sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ministerio de Trabajo y Promoción del Empleo">
+  <meta property="og:title" content="Certificado Único Laboral (CERTIJOVEN y CERTIADULTO) - Ministerio de Trabajo y Promoción del Empleo">
+  <meta property="og:description" content="El documento que necesitas para postular a un empleo. Reúne tu información personal, antecedentes policiales, penales y judiciales, educación y experiencia laboral formal. Lo puedes obtener en línea, rápido y gratis.">
+  <meta property="og:image" content="https://www.empleosperu.gob.pe/CertificadoUnicoLaboral/images/certificado_unico_laboral.png">
+  <meta property="og:image:secure_url" content="https://www.empleosperu.gob.pe/CertificadoUnicoLaboral/images/certificado_unico_laboral.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:image:alt" content="Certificado Único Laboral">
+
+  <!-- Metadatos Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Certificado Único Laboral (CERTIJOVEN y CERTIADULTO) - Ministerio de Trabajo y Promoción del Empleo">
+  <meta name="twitter:description" content="El documento que necesitas para postular a un empleo. Reúne tu información personal, antecedentes policiales, penales y judiciales, educación y experiencia laboral formal. Lo puedes obtener en línea, rápido y gratis.">
+  <meta name="twitter:image" content="https://www.empleosperu.gob.pe/CertificadoUnicoLaboral/images/certificado_unico_laboral.png">
+
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+
+<body>
+  <header class="government-header">
+    <div class="brand"><img src="assets/gob-pe.png" alt="gob.pe, referencia visual"><span
+        class="ministry-name">Ministerio de Trabajo<br>y Promoción del Empleo</span></div>
+    <div class="header-actions"><a href="index.html" class="home-link" data-home>Inicio</a></div>
+  </header>
+  <nav class="breadcrumbs" aria-label="Ruta de navegación">
+    <div class="container">
+      <a href="index.html" aria-label="Inicio" class="home-icon" data-home><svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m2 11 10-9 10 9M5 9v12h5v-7h4v7h5V9" />
+        </svg></a><span>&gt;</span><a href="index.html" data-home>Ministerio de Trabajo y Promoción del
+        Empleo</a><span>&gt;</span><a href="index.html" data-home>Certificado Único Laboral</a>
+    </div>
+  </nav>
+  <main>
+    <section id="search-screen" class="container search-screen">
+      <h1>Verifica el Certificado Único Laboral</h1>
+      <form id="search-form" novalidate>
+        <button type="button" id="clear" class="clear-button">Limpiar</button>
+        <label class="sr-only" for="certificate">Número de certificado</label>
+        <input id="certificate" name="cul" inputmode="numeric" maxlength="11" placeholder="N° de certificado"
+          value="20264445411" required autocomplete="off">
+        <label class="sr-only" for="document-type">Tipo de documento</label>
+        <select id="document-type" name="tipo">
+          <option value="DNI">DNI</option>
+          <option value="CE">CE</option>
+        </select>
+        <label class="sr-only" for="document">Número de documento</label>
+        <input id="document" name="numdoc" inputmode="numeric" maxlength="12" placeholder="N° de documento"
+          value="43339108" required autocomplete="off">
+        <label class="sr-only" for="ruc">RUC empresa consultante</label>
+        <input id="ruc" name="ruc" inputmode="numeric" maxlength="11" placeholder="RUC empresa consultante" required
+          autocomplete="off" aria-describedby="form-message">
+        <button type="submit" class="search-button">Buscar</button>
+        <p id="form-message" role="alert" hidden></p>
+      </form>
+      <section id="results" class="results" aria-labelledby="results-title" hidden>
+        <h2 id="results-title" tabindex="-1">Resultado de búsqueda</h2>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                <th>N° de certificado</th>
+                <th>Fecha de emisión</th>
+                <th>Apellidos y nombres</th>
+                <th>Estado</th>
+                <th><span class="sr-only">Acciones</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>20264445411</td>
+                <td>23/10/2026 14:49:15</td>
+                <td>SANCHEZ HUAMASH DANNY AUGUSTO</td>
+                <td>Vigente <span class="reference-label"></span></td>
+                <td><a id="view-certificate" class="view-button" href="?vista=certificado" target="_blank"
+                    rel="noopener noreferrer" aria-label="Ver certificado en una ventana nueva"><svg viewBox="0 0 24 16"
+                      aria-hidden="true">
+                      <path d="M1 8s4-7 11-7 11 7 11 7-4 7-11 7S1 8 1 8Z" />
+                      <circle cx="12" cy="8" r="4" />
+                    </svg> Ver</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </section>
+    <section id="viewer-screen" class="container viewer-screen" hidden>
+      <h1>Certificado Único Laboral</h1>
+      <div class="pdf-viewer">
+        <div class="pager" aria-label="Navegación del documento"><button id="previous" type="button"><span
+              aria-hidden="true">‹</span> Anterior</button><button id="next" type="button">Siguiente <span
+              aria-hidden="true">›</span></button><span id="page-counter" role="status" aria-live="polite">Pág.: 1 /
+            3</span></div>
+        <img id="pdf-page" class="pdf-page" src="assets/pdf/pagina-1.png" alt="Página 1 de 3 del certificado adjunto"
+          width="1343" height="1900">
+        <p id="pdf-error" role="alert" hidden>No se pudo cargar esta página. <a href="assets/certificado.pdf"
+            target="_blank" rel="noopener">Abrir el PDF original</a></p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="legal-band"><button id="legal-button" type="button"><strong>Ley y Reglamento</strong> del Certificado
+        Único Laboral</button></div>
+    <div class="footer-brand container"><img src="assets/ministerio.png"
+        alt="Perú — Ministerio de Trabajo y Promoción del Empleo"></div>
+  </footer>
+  <dialog id="legal-dialog">
+    <h2>Ley y Reglamento del Certificado Único Laboral</h2>
+    <p>Esta es una demostración local. La información oficial está disponible en el portal del Ministerio de Trabajo y
+      Promoción del Empleo.</p><a href="https://www.empleosperu.gob.pe/CertificadoUnicoLaboral/" target="_blank"
+      rel="noopener noreferrer">Visitar el portal oficial ↗</a>
+    <form method="dialog"><button>Cerrar</button></form>
+  </dialog>
+</body>
+
+</html>
